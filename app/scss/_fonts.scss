@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Mabry Pro';
+  src: url('../app/fonts/mabrypro-regular-webfont.woff2') format('woff2'),
+    url('../app/fonts/mabrypro-regular-webfont.woff') format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Mabry Pro';
+  src: url('../app/fonts/mabrypro-light-webfont.woff2') format('woff2'),
+       url('../app/fonts/mabrypro-light-webfont.woff') format('woff');
+  font-weight: 300;
+
+}
+
+@font-face {
+  font-family: 'Mabry Pro';
+  src: url('../app/fonts/mabrypro-bold-webfont.woff2') format('woff2'),
+    url('../app/fonts/mabrypro-bold-webfont.woff') format('woff');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Druk Wide Cyr';
+  src: url('../app/fonts/drukwidecyr-medium-webfont.woff2') format('woff2'),
+    url('../app/fonts/drukwidecyr-medium-webfont.woff') format('woff');
+  font-weight: 400;
+}

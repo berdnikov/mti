@@ -1,0 +1,62 @@
+.forms {
+  position: relative;
+  padding-top: 23px;
+  min-height: 399px;
+  width: calc(100% + 42px);
+  background: url(/app/img/bg/bg-forms.svg) top center no-repeat;
+  background-size: contain;
+
+  &__btns {
+    display: flex;
+    margin-bottom: 31px;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 243px;
+    padding: 14px;
+    background: #eaeaeb;
+    border: 1px solid $color-main;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: $color-main;
+    @include transition(opacity);
+
+    &:not(:first-child) {
+      margin-left: -1px;
+    }
+
+    &:not(.active) {
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    &.active {
+      color: $white;
+      background-color: $color-main;
+    }
+  }
+
+  &__text {
+    display: none;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0 0 0 51px;
+
+    &.active {
+      display: block;
+    }
+
+    &-wrapper {
+      overflow: auto;
+      max-height: 210px;
+      margin-right: 140px;
+    }
+  }
+}
