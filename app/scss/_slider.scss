@@ -1,6 +1,6 @@
 .swiper {
   width: calc(100% + 10px);
-  margin-top: 45px;
+  margin: 45px 0 68px;
   background: url(/app/img/bg/bg.svg) top center no-repeat;
   background-size: contain;
 
@@ -24,7 +24,7 @@
     text-align: left;
 
     &-current {
-      margin-right: 5px;
+      margin-right: 8px;
     }
 
     &-total {

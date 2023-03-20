@@ -41,7 +41,7 @@
   }
 
   &__address {
-    margin-top: 6px;
+    margin-top: 8px;
     opacity: 0.8;
     font-size: 14px;
     line-height: 150%;
@@ -51,14 +51,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 365px;
+    max-width: 375px;
   }
 
   &__logo {
-    margin-top: 45px;
+    margin-top: 49px;
+    margin-bottom: 12px;
   }
 
   &__copyright {
+    margin-bottom: 6px;
     font-size: 10px;
     line-height: 150%;
     opacity: 0.8;
@@ -75,6 +77,7 @@
 
   &__social {
     display: flex;
+    margin-left: -136px;
 
     &-link {
       display: flex;

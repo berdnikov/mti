@@ -1,8 +1,9 @@
 .study {
   position: relative;
-  padding-top: 23px;
   min-height: 399px;
   width: calc(100% + 42px);
+  margin: -22px 0 112px;
+  padding-top: 23px;
   background: url(/app/img/bg/bg-study.svg) top center no-repeat;
   background-size: contain;
 
@@ -15,7 +16,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 243px;
+    min-width: 244px;
     padding: 14px;
     background: #eaeaeb;
     border: 1px solid $color-main;

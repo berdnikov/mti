@@ -68,8 +68,9 @@ a {
 
 .filter {
   position: relative;
-  display: inline-block;
   z-index: 1;
+  display: inline-block;
+  padding-top: 30px;
 
   &__btn {
     display: flex;
