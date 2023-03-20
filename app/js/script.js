@@ -79,17 +79,17 @@ function showNews() {
 
 showNews()
 
-const chooseBtns = document.querySelectorAll('.forms__btn')
-const formsBtns = document.getElementById('formsBtns')
-const formsText = document.getElementById('formsText')
+const chooseBtns = document.querySelectorAll('.study__btn')
+const studyBtns = document.getElementById('studyBtns')
+const studyText = document.getElementById('studyText')
 
 function chooseForm() {
   if (this.className.includes('active')) return
-  formsBtns.getElementsByClassName('active')[0].classList.remove('active')
-  formsText.getElementsByClassName('active')[0].classList.remove('active')
+  studyBtns.getElementsByClassName('active')[0].classList.remove('active')
+  studyText.getElementsByClassName('active')[0].classList.remove('active')
   this.classList.add('active')
-  formsText
-    .getElementsByClassName('forms__text')
+  studyText
+    .getElementsByClassName('study__text')
     [this.getAttribute('data-switch')].classList.add('active')
 }
 
