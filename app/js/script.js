@@ -96,3 +96,15 @@ function chooseForm() {
 chooseBtns.forEach(function (el) {
   el.addEventListener('click', chooseForm)
 })
+
+const faq = document.querySelectorAll('.faq__block')
+
+function toggleFaq() {
+  this.className.includes('active')
+    ? this.classList.remove('active')
+    : this.classList.add('active')
+}
+
+faq.forEach(function (el) {
+  el.addEventListener('click', toggleFaq)
+})

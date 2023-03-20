@@ -1,0 +1,47 @@
+.faq {
+  &__block {
+    position: relative;
+    padding: 30px;
+    margin-bottom: 10px;
+    background: #fefefe;
+    cursor: pointer;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 31px;
+      right: 40px;
+      width: 19px;
+      height: 20px;
+      background: center no-repeat;
+      background-size: 19px;
+      background-image: url("data:image/svg+xml,%3Csvg width='19' height='20' viewBox='0 0 19 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.5 9.5H8V10.5H0.5V9.5ZM9 10.5L9 9.5H10L10 10.5H9ZM10 8.5H9V1L10 1V8.5ZM11 10.5L11 9.5H18.5V10.5H11ZM9 11.5H10V19H9V11.5Z' fill='%23FF0000' stroke='%23FF0000'/%3E%3C/svg%3E%0A");
+    }
+
+    &.active {
+      &::after {
+        top: 40px;
+        height: 2px;
+      }
+      .faq__answer {
+        display: block;
+      }
+    }
+  }
+
+  &__question {
+    padding-right: 35px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  &__answer {
+    display: none;
+    padding-top: 30px;
+    padding-right: 65px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
