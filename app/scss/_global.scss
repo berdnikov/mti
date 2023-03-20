@@ -45,6 +45,19 @@ a {
     font-weight: 700;
     background: $red;
     color: $white;
+    border: none;
+    cursor: pointer;
+    @include transition(opacity);
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &_form {
+    padding: 16px 28px;
+    font-size: 14px;
+    line-height: 16px;
   }
 
   &_outline {
