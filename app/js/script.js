@@ -84,11 +84,19 @@ const chooseBtns = document.querySelectorAll('.study__btn')
 const studyText = document.getElementById('studyText')
 
 function chooseForm() {
-  if (this.className.includes('active')) return
-  Array.from(chooseBtns)
-    .filter(btn => btn.className.includes('active'))
-    .map(btn => btn.classList.remove('active'))
-  studyText.getElementsByClassName('active')[0].classList.remove('active')
+  if (this.className.includes('active')) {
+    if (window.innerWidth > 1385) return
+    this.classList.remove('active')
+    studyText
+      .getElementsByClassName('study__text active')[0]
+      .classList.remove('active')
+  }
+  if (studyText.getElementsByClassName('study__text active')[0]) {
+    Array.from(chooseBtns)
+      .filter(btn => btn.className.includes('active'))
+      .map(btn => btn.classList.remove('active'))
+    studyText.getElementsByClassName('active')[0].classList.remove('active')
+  }
   this.classList.add('active')
   studyText
     .getElementsByClassName('study__text')
@@ -109,4 +117,22 @@ function toggleFaq() {
 
 faq.forEach(function (el) {
   el.addEventListener('click', toggleFaq)
+})
+
+if (window.innerWidth < 1386) {
+  studyText
+    .getElementsByClassName('study__text active active')[0]
+    .classList.remove('active')
+  Array.from(chooseBtns)
+    .filter(btn => btn.className.includes('active'))
+    .map(btn => btn.classList.remove('active'))
+}
+
+const menu = document.getElementById('menu')
+const menuBtn = document.getElementById('menuBtn')
+
+menuBtn.addEventListener('click', function () {
+  menu.className.includes('active')
+    ? menu.classList.remove('active')
+    : menu.classList.add('active')
 })

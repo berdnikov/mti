@@ -22,7 +22,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="dist/style.css?cb=1679391462482" />
+    <link rel="stylesheet" href="dist/style.css?cb=1679418319122" />
   </head>
   <body>
     <div class="content">
@@ -43,18 +43,16 @@
             8 (800) 100-85-95
           </a>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="wrapper">
-    <nav class="header__nav">
+        <div id="menu" class="header__menu">
+          <button id="menuBtn" class="header__menu-btn"></button>
+          <div class="header__menu-list"><nav class="header__nav">
   <ul class="header__nav-list">
     <li class="header__nav-item">
       <div class="nav-dropdpown">
-        <a href="#" class="header__nav-link">
+        <span class="header__nav-link">
           Об институте
           <div class="arrow-down"></div
-        ></a>
+        ></span>
 
         <ul class="nav-dropdpown__list">
           <li class="nav-dropdpown__list-item">
@@ -92,8 +90,57 @@
     </li>
   </ul>
 </nav>
-
+</div>
+        </div>
+      </div>
+    </div>
   </div>
+  <div class="wrapper wrapper_nav"><nav class="header__nav">
+  <ul class="header__nav-list">
+    <li class="header__nav-item">
+      <div class="nav-dropdpown">
+        <span class="header__nav-link">
+          Об институте
+          <div class="arrow-down"></div
+        ></span>
+
+        <ul class="nav-dropdpown__list">
+          <li class="nav-dropdpown__list-item">
+            <a href="#" class="nav-dropdpown__list-link">О нас</a>
+          </li>
+          <li class="nav-dropdpown__list-item">
+            <a href="#" class="nav-dropdpown__list-link">История</a>
+          </li>
+          <li class="nav-dropdpown__list-item">
+            <a href="#" class="nav-dropdpown__list-link">Преподаватели</a>
+          </li>
+          <li class="nav-dropdpown__list-item">
+            <a href="#" class="nav-dropdpown__list-link">Партнеры</a>
+          </li>
+          <li class="nav-dropdpown__list-item">
+            <a href="#" class="nav-dropdpown__list-link">Новости</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="header__nav-item">
+      <a href="#" class="header__nav-link">Поступающему</a>
+    </li>
+    <li class="header__nav-item">
+      <a href="#" class="header__nav-link">Студенту</a>
+    </li>
+    <li class="header__nav-item">
+      <a href="#" class="header__nav-link">Высшее образование</a>
+    </li>
+    <li class="header__nav-item">
+      <a href="#" class="header__nav-link">Колледж</a>
+    </li>
+    <li class="header__nav-item">
+      <a href="#" class="header__nav-link">Каталог</a>
+    </li>
+  </ul>
+</nav>
+</div>
 </header>
 
       <main>
@@ -110,9 +157,15 @@
         </div>
       </div>
       <picture class="swiper-slide__img">
-        <!-- <source srcset="" media="(min-width: 940px)" type="image/webp" /> -->
-        <source srcset="/app/img/slides/img1.webp" type="image/webp" />
-        <img src="/app/img/slides/img1.png" alt="" />
+        <source srcset="" type="image/webp" />
+        <source
+          srcset="/app/img/slides/img1.webp"
+          media="(min-width: 880px)"
+          type="image/webp"
+        />
+        <source srcset="/app/img/slides/mob1.webp" type="image/webp" />
+        <source srcset="/app/img/slides/img1.png" media="(min-width: 880px)" />
+        <img src="/app/img/slides/mob1.png" alt="" />
       </picture>
     </div>
     <div class="swiper-slide">
@@ -125,8 +178,15 @@
         </div>
       </div>
       <picture class="swiper-slide__img">
-        <source srcset="/app/img/slides/img2.webp" type="image/webp" />
-        <img src="/app/img/slides/img2.png" alt="" />
+        <source srcset="" type="image/webp" />
+        <source
+          srcset="/app/img/slides/img2.webp"
+          media="(min-width: 880px)"
+          type="image/webp"
+        />
+        <source srcset="/app/img/slides/mob2.webp" type="image/webp" />
+        <source srcset="/app/img/slides/img2.png" media="(min-width: 880px)" />
+        <img src="/app/img/slides/mob2.png" alt="" />
       </picture>
     </div>
     <div class="swiper-slide">
@@ -139,8 +199,15 @@
         </div>
       </div>
       <picture class="swiper-slide__img">
-        <source srcset="/app/img/slides/img3.webp" type="image/webp" />
-        <img src="/app/img/slides/img3.png" alt="" />
+        <source srcset="" type="image/webp" />
+        <source
+          srcset="/app/img/slides/img3.webp"
+          media="(min-width: 880px)"
+          type="image/webp"
+        />
+        <source srcset="/app/img/slides/mob3.webp" type="image/webp" />
+        <source srcset="/app/img/slides/img3.png" media="(min-width: 880px)" />
+        <img src="/app/img/slides/mob3.png" alt="" />
       </picture>
     </div>
     <div class="swiper-slide">
@@ -153,8 +220,15 @@
         </div>
       </div>
       <picture class="swiper-slide__img">
-        <source srcset="/app/img/slides/img4.webp" type="image/webp" />
-        <img src="/app/img/slides/img4.png" alt="" />
+        <source srcset="" type="image/webp" />
+        <source
+          srcset="/app/img/slides/img4.webp"
+          media="(min-width: 880px)"
+          type="image/webp"
+        />
+        <source srcset="/app/img/slides/mob4.webp" type="image/webp" />
+        <source srcset="/app/img/slides/img4.png" media="(min-width: 880px)" />
+        <img src="/app/img/slides/mob4.png" alt="" />
       </picture>
     </div>
   </div>
@@ -203,7 +277,8 @@
       МТИ проводит обучение на собственной платформе с использованием
       современных технологий, что несомненно является оптимальным решением для
       работающих студентов. Стоимость такой формы обучения является наиболее
-      доступной. <br />*Дистанционные образовательные технологии
+      доступной. <br />
+      <span class="study__text-light">*Дистанционные образовательные технологии</span>
     </div>
     <button class="study__btn study__btn_mobile" data-switch="2">
       <span>Очно-заочная</span><span class="arrow-down"></span>
@@ -319,12 +394,21 @@
 
           <section class="form-block">
   <picture>
-    <source srcset="/app/img/bg/bg-form-tablet.svg" media="(max-width: 1384px)" />
+    <source
+      srcset="/app/img/bg/bg-form-mobile.svg"
+      media="(max-width: 880px)"
+    />
+    <source
+      srcset="/app/img/bg/bg-form-tablet.svg"
+      media="(max-width: 1385px)"
+    />
     <img src="/app/img/bg/bg-form.svg" class="form-block__bg" alt="" />
   </picture>
 
   <div class="form-block__title">
-    <div class="form-block__title-text">Поможем в выборе!</div>
+    <div class="form-block__title-text">
+      Поможем <br />в выборе!&nbsp;
+    </div>
   </div>
 
   <form action="" class="form-block__form">
@@ -406,6 +490,6 @@
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="dist/all.js?cb=1679391462482"></script>
+    <script src="dist/all.js?cb=1679418319122"></script>
   </body>
 </html>

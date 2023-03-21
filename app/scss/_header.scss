@@ -58,11 +58,67 @@
       display: flex;
       align-items: center;
       padding: 20px 13px;
-
+      cursor: pointer;
       @include transition(background-color);
 
       &:hover {
         @extend %header-dropdown-hover;
+      }
+    }
+  }
+
+  &__menu {
+    display: none;
+    position: relative;
+
+    &.active {
+      .header__menu {
+        &-list {
+          opacity: 1;
+          pointer-events: all;
+        }
+
+        &-btn {
+          background-image: url(/app/img/icons/menu-icon-close.svg);
+        }
+      }
+    }
+
+    &-btn {
+      position: relative;
+      z-index: 21;
+      width: 40px;
+      height: 40px;
+      background: url(/app/img/icons/menu-icon.svg) center no-repeat;
+      background-size: contain;
+      border: none;
+    }
+
+    &-list {
+      position: fixed;
+      z-index: 20;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 60px 30px;
+      background: $bg;
+      opacity: 0;
+      pointer-events: none;
+      @include transition(opacity);
+
+      .header__nav {
+        max-width: 293px;
+        margin: 0 auto;
+
+        &-list {
+          padding: 0;
+        }
+
+        &-item {
+          width: 100%;
+          margin-bottom: 11px;
+          margin-right: 0;
+        }
       }
     }
   }

@@ -42,6 +42,10 @@
       color: $white;
       background-color: $color-main;
     }
+
+    &_mobile {
+      display: none;
+    }
   }
 
   &__text {
@@ -58,6 +62,10 @@
       overflow: auto;
       max-height: 210px;
       margin-right: 140px;
+    }
+
+    &-light {
+      color: #a9a9a9;
     }
   }
 }
