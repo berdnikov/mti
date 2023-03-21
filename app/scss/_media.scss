@@ -1,0 +1,261 @@
+@media (max-width: 1385px) {
+  .wrapper {
+    width: 850px;
+  }
+
+  .header {
+    &__worktime {
+      display: none;
+    }
+
+    &__nav {
+      &-list {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 13px 0 10px;
+      }
+
+      &-link {
+        padding: 10px 13px;
+      }
+
+      &-item {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .study {
+    width: 100%;
+    min-height: auto;
+    background: $white;
+    margin-top: 0;
+    padding-top: 0;
+
+    &__btns {
+      display: none;
+    }
+
+    &__text {
+      padding: 19px 70px 35px 52px;
+      font-size: 16px;
+      line-height: 21px;
+
+      &-wrapper {
+        max-height: none;
+        margin-right: 50px;
+        width: 100%;
+      }
+    }
+
+    &__btn {
+      justify-content: space-between;
+      padding: 17px 20px 17px 52px;
+
+      &:not(.active) {
+        border-color: #d8d8d8;
+      }
+
+      &:not(:first-child) {
+        margin: -1px 0 0;
+      }
+
+      &_mobile {
+        display: flex;
+        width: 100%;
+      }
+
+      .arrow-down {
+        transition: none;
+      }
+
+      &.active .arrow-down {
+        transform: rotate(180deg);
+        background-image: url(../app/img/icons/arrow-down-w.svg);
+      }
+    }
+  }
+
+  .swiper {
+    width: calc(100% + 20px);
+    margin-top: 10px;
+    margin-bottom: 119px;
+    background-image: url(/app/img/bg/bg-tablet.svg);
+
+    &-slide {
+      height: 903px;
+
+      &__img {
+        margin: auto -30px -8px auto;
+      }
+    }
+
+    &-pagination {
+      top: auto !important;
+      bottom: 22px !important;
+      text-align: center;
+    }
+  }
+
+  .swiper-horizontal > .swiper-pagination-bullets {
+    .swiper-pagination-bullet {
+      margin: 0 2px 0 3px;
+    }
+  }
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 0;
+    background: #d8d8d8;
+
+    &-active {
+      background: #555;
+    }
+  }
+
+  .slide {
+    &__content {
+      max-width: 710px;
+      padding-left: 83px;
+      padding-top: 58px;
+    }
+
+    &__title {
+      max-height: none;
+      margin: 0 0 24px;
+    }
+
+    &__btns {
+      flex-wrap: wrap;
+      width: 207px;
+      padding-top: 35px;
+
+      .btn {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+
+        &:first-child {
+          margin-right: 0;
+          margin-bottom: 14px;
+        }
+      }
+    }
+  }
+
+  .news {
+    width: calc(100% + 50px);
+    margin: 0 -25px 7px;
+    padding-top: 51px;
+
+    &__item {
+      width: calc(50% - 50px);
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+
+    &__title {
+      margin-top: 13px;
+    }
+
+    &__text {
+      margin-top: 11px;
+    }
+  }
+
+  .btn_show-more {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 187px;
+    margin-bottom: 119px;
+    padding: 13px;
+  }
+
+  .filter {
+    padding-top: 14px;
+
+    &__btn {
+      min-width: 300px;
+      padding: 0 11px 0 16px;
+    }
+  }
+
+  .form-block {
+    padding: 80px 0 0;
+    margin: 120px 0;
+    min-height: 556px;
+
+    &__title {
+      margin: 0 auto;
+    }
+
+    &__form {
+      flex-wrap: wrap;
+      max-width: 436px;
+      margin: 40px auto 0;
+    }
+
+    &__input {
+      width: 100%;
+      margin: 0 0 20px;
+      height: 48px;
+    }
+
+    &__note {
+      max-width: 400px;
+      margin: 20px auto 0;
+      text-align: center;
+    }
+  }
+
+  .btn_form {
+    width: 100%;
+  }
+
+  .footer {
+    padding: 32px 0 47px;
+
+    &__logo {
+      order: 1;
+      margin: 0 0 46px;
+    }
+
+    &__address-block {
+      &:first-child {
+        order: 2;
+      }
+      &:nth-child(2) {
+        order: 3;
+      }
+    }
+
+    &__content {
+      flex-wrap: wrap;
+    }
+
+    &__social {
+      width: 100%;
+      margin: 35px 2px 0;
+
+      &-link {
+        margin: 0 30px 0 0;
+      }
+    }
+
+    &__copyright {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 52px 0 0;
+
+      &-text {
+        margin-right: 90px;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .faq__block:after {
+    right: 21px;
+  }
+}

@@ -1,13 +1,16 @@
 <section class="form-block">
-  <img src="/app/img/bg/bg-form.svg" class="form-block__bg" alt="" />
+  <picture>
+    <source srcset="/app/img/bg/bg-form-tablet.svg" media="(max-width: 1384px)" />
+    <img src="/app/img/bg/bg-form.svg" class="form-block__bg" alt="" />
+  </picture>
 
   <div class="form-block__title">
     <div class="form-block__title-text">Поможем в выборе!</div>
   </div>
 
   <form action="" class="form-block__form">
-    <input type="text" class="form-block__input" placeholder="Имя">
-    <input type="tel" class="form-block__input" placeholder="Телефон">
+    <input type="text" class="form-block__input" placeholder="Имя" />
+    <input type="tel" class="form-block__input" placeholder="Телефон" />
     <button class="btn btn_red btn_form">Отправить</button>
   </form>
 

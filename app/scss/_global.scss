@@ -40,9 +40,9 @@ a {
   padding: 20px 40px;
   font-size: 16px;
   line-height: 130%;
+  font-weight: 700;
 
   &_red {
-    font-weight: 700;
     background: $red;
     color: $white;
     border: none;
@@ -63,6 +63,18 @@ a {
   &_outline {
     min-width: 170px;
     border: 1px solid #000;
+    background: transparent;
+    color: $color-main;
+    cursor: pointer;
+    @include transition(opacity);
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &_show-more {
+    display: none;
   }
 }
 

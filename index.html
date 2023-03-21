@@ -22,7 +22,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="dist/style.css?cb=1679306054925" />
+    <link rel="stylesheet" href="dist/style.css?cb=1679391462482" />
   </head>
   <body>
     <div class="content">
@@ -106,7 +106,7 @@
         <div class="slide__subtitle">Начни строить свое будущее сегодня!</div>
         <div class="slide__btns">
           <a href="#" class="btn btn_red">Стать студентом</a>
-          <a href="#" class="btn btn_outline">Подробне</a>
+          <a href="#" class="btn btn_outline">Подробнее</a>
         </div>
       </div>
       <picture class="swiper-slide__img">
@@ -121,7 +121,7 @@
         <div class="slide__subtitle">Получи техническую специальность</div>
         <div class="slide__btns">
           <a href="#" class="btn btn_red">Стать студентом</a>
-          <a href="#" class="btn btn_outline">Подробне</a>
+          <a href="#" class="btn btn_outline">Подробнее</a>
         </div>
       </div>
       <picture class="swiper-slide__img">
@@ -135,7 +135,7 @@
         <div class="slide__subtitle">Программа “Два диплома”</div>
         <div class="slide__btns">
           <a href="#" class="btn btn_red">Стать студентом</a>
-          <a href="#" class="btn btn_outline">Подробне</a>
+          <a href="#" class="btn btn_outline">Подробнее</a>
         </div>
       </div>
       <picture class="swiper-slide__img">
@@ -149,7 +149,7 @@
         <div class="slide__subtitle">Начни строить свое будущее с нами</div>
         <div class="slide__btns">
           <a href="#" class="btn btn_red">Стать студентом</a>
-          <a href="#" class="btn btn_outline">Подробне</a>
+          <a href="#" class="btn btn_outline">Подробнее</a>
         </div>
       </div>
       <picture class="swiper-slide__img">
@@ -166,13 +166,16 @@
           <h2 class="page-title">Формы обучения</h2>
 
 <section class="study">
-  <div id="studyBtns" class="study__btns">
+  <div class="study__btns">
     <button class="study__btn active" data-switch="0">Очная</button>
     <button class="study__btn" data-switch="1">Заочная с ДОТ*</button>
     <button class="study__btn" data-switch="2">Очно-заочная</button>
   </div>
 
   <div id="studyText" class="study__text-wrapper beauty-scroll">
+    <button class="study__btn study__btn_mobile active" data-switch="0">
+      <span>Очная</span><span class="arrow-down"></span>
+    </button>
     <div class="study__text active" data-tab="1">
       <b>Очная форма обучения</b> – это классический формат обучения,
       подразумевающий очное посещение лекций, семинаров, практических
@@ -185,6 +188,9 @@
       очно-заочной, но в МТИ предусмотрена гибкая система оплаты и программа
       лояльности, которая дает возможность обучаться каждому.
     </div>
+    <button class="study__btn study__btn_mobile" data-switch="1">
+      <span>Заочная с ДОТ*</span><span class="arrow-down"></span>
+    </button>
     <div class="study__text" data-tab="2">
       <b>Заочная форма обучения</b> - это современный формат обучения
       <b>с применением дистанционных технологий</b>. Классическая заочная форма
@@ -199,6 +205,9 @@
       работающих студентов. Стоимость такой формы обучения является наиболее
       доступной. <br />*Дистанционные образовательные технологии
     </div>
+    <button class="study__btn study__btn_mobile" data-switch="2">
+      <span>Очно-заочная</span><span class="arrow-down"></span>
+    </button>
     <div class="study__text" data-tab="3">
       <b>Очно-заочная форма обучения</b> – это гибрид очного и заочного
       обучения. Студенты совмещают посещение лекций в нерабочее время несколько
@@ -235,6 +244,8 @@
 
 
 <ul id="newsList" class="news"></ul>
+
+<button class="btn btn_outline btn_show-more">Показать больше</button>
 
           <section class="faq">
   <h2 class="page-title">Вопрос / ответ</h2>
@@ -307,15 +318,18 @@
 </section>
 
           <section class="form-block">
-  <img src="/app/img/bg/bg-form.svg" class="form-block__bg" alt="" />
+  <picture>
+    <source srcset="/app/img/bg/bg-form-tablet.svg" media="(max-width: 1384px)" />
+    <img src="/app/img/bg/bg-form.svg" class="form-block__bg" alt="" />
+  </picture>
 
   <div class="form-block__title">
     <div class="form-block__title-text">Поможем в выборе!</div>
   </div>
 
   <form action="" class="form-block__form">
-    <input type="text" class="form-block__input" placeholder="Имя">
-    <input type="tel" class="form-block__input" placeholder="Телефон">
+    <input type="text" class="form-block__input" placeholder="Имя" />
+    <input type="tel" class="form-block__input" placeholder="Телефон" />
     <button class="btn btn_red btn_form">Отправить</button>
   </form>
 
@@ -392,6 +406,6 @@
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="dist/all.js?cb=1679306054925"></script>
+    <script src="dist/all.js?cb=1679391462482"></script>
   </body>
 </html>

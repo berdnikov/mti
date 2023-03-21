@@ -1,7 +1,8 @@
 const swiper = new Swiper('.swiper', {
   pagination: {
     el: '.swiper-pagination',
-    type: 'fraction'
+    type: window.innerWidth > 1385 ? 'fraction' : 'bullets',
+    clickable: true
   },
   navigation: {
     nextEl: '.swiper-button-next',
@@ -80,12 +81,13 @@ function showNews() {
 showNews()
 
 const chooseBtns = document.querySelectorAll('.study__btn')
-const studyBtns = document.getElementById('studyBtns')
 const studyText = document.getElementById('studyText')
 
 function chooseForm() {
   if (this.className.includes('active')) return
-  studyBtns.getElementsByClassName('active')[0].classList.remove('active')
+  Array.from(chooseBtns)
+    .filter(btn => btn.className.includes('active'))
+    .map(btn => btn.classList.remove('active'))
   studyText.getElementsByClassName('active')[0].classList.remove('active')
   this.classList.add('active')
   studyText
