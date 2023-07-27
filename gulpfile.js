@@ -68,7 +68,7 @@ function browserSyncServe(cb) {
 }
 
 async function includeHTML() {
-  return src(['app/components/index.html'])
+  return src(['app/components/pages/*.html'])
     .pipe(
       fileinclude({
         prefix: '@@',
